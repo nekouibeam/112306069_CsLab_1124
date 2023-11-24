@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first CSS stylesheet</title>
+    <link rel="stylesheet" type="text/css" href="112306069_CSS_Lab.css">
+</head>
+
+<body>
+    <h1>My first style page</h1>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdown" id="services-dropdown">
+                <a href="#services">Services</a>
+                <!-- 包含下拉內容的 div -->
+                <div class="dropdown-content" id="services-content">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                    <!-- 可以添加更多的選項 -->
+                </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="right-move">
+        <!-- Content of the "Home" section -->
+        <h2>
+            <div class="empty-line"></div>Welcome to the Home page!
+        </h2>
+        <p>This is the content of the Home section.</p>
+    </div>
+    <div class="empty-line">
+    </div>
+    <div id="about" class="right-move">
+        <!-- Content of the "about" section -->
+        <h2>About we</h2>
+        <p>This is the content of the about section.</p>
+    </div>
+    <div class="empty-line">
+    </div>
+    <div id="services" class="right-move">
+        <!-- Content of the "services" section -->
+        <h2>Our services</h2>
+        <div class="right-move2">
+            <h2>Choose a service:</h2>
+            <!-- 下拉菜單 -->
+            <select>
+                <option value="option1">service 1</option>
+                <option value="option2">service 2</option>
+                <option value="option3">service 3</option>
+                <!-- 可以添加更多的選項 -->
+            </select>
+        </div>
+    </div>
+    <div class="empty-line">
+    </div>
+    <div id="contact" class="right-move">
+        <!-- Content of the "contact" section -->
+        <h2>Contact</h2>
+        <p>Email: 123@mail.com</p>
+    </div>
+</body>
+
+</html>
